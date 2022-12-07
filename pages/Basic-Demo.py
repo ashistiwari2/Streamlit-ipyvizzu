@@ -3,7 +3,7 @@ import pandas as pd
 import ssl
 import streamlit as st 
 from page_config import standard_page_widgets
-from streamlit_extras.mention import mention
+#from streamlit_extras.mention import mention
 # Add this on top of any page to make mpa-config work!
 standard_page_widgets()
 
@@ -59,16 +59,16 @@ anim_obj3 = vizzu_animate(anim_obj2,
 with st.container():
     vizzu_plot(anim_obj3,width=800,height=800)
 
-with st.sidebar:
-    mention(
-        label="Resources",
-        icon="github",  # Some icons are available... like Streamlit!
-        url="https://github.com/alod83/data-science/blob/master/DataVisualization/ipyvizzu/ipyvizzu%20Example.ipynb",
-    )
+# with st.sidebar:
+#     mention(
+#         label="Resources",
+#         icon="github",  # Some icons are available... like Streamlit!
+#         url="https://github.com/alod83/data-science/blob/master/DataVisualization/ipyvizzu/ipyvizzu%20Example.ipynb",
+#     )
 
-    mention(
-        label="ipyvizzu-repositiory",
-        icon="github",  # Some icons are available... like Streamlit!
-        url="https://github.com/vizzuhq/ipyvizzu",
-    )
+#     mention(
+#         label="ipyvizzu-repositiory",
+#         icon="github",  # Some icons are available... like Streamlit!
+#         url="https://github.com/vizzuhq/ipyvizzu",
+#     )
 
