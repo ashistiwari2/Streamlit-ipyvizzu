@@ -2,7 +2,7 @@ import pandas as pd
 from ipyvizzu import Chart, Data, Config, Style
 from streamlit.components.v1 import html
 import streamlit as st
-from streamlit_extras.dataframe_explorer import dataframe_explorer 
+#from streamlit_extras.dataframe_explorer import dataframe_explorer 
 # works with streamlit version streamlit==1.13.0
 from page_config import standard_page_widgets
 # Add this on top of any page to make mpa-config work!
@@ -73,7 +73,7 @@ data_path = "Data/chart_types_eu.csv"
 df = load_data(data_path=data_path)
 
 with st.sidebar:
-    filtered_df = dataframe_explorer(df)
+    filtered_df = st.dataframe(df)
 with st.expander("DataFrame ⤵️"):
     st.dataframe(filtered_df)
 _CHART = BubbleChart(filtered_df)
