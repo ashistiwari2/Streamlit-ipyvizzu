@@ -129,10 +129,10 @@ obj,CHART,df = create_chart()
 with st.container():
     html(CHART, width=800, height=600)
 
-from streamlit_extras.mention import mention
-with st.sidebar:
-    mention(
-        label="Resources",
-        icon="twitter",  # Some icons are available... like Streamlit!
-        url="https://twitter.com/VizzuHQ/status/1575473747599007744",
-    )
+# from streamlit_extras.mention import mention
+# with st.sidebar:
+#     mention(
+#         label="Resources",
+#         icon="twitter",  # Some icons are available... like Streamlit!
+#         url="https://twitter.com/VizzuHQ/status/1575473747599007744",
+#     )
