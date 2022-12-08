@@ -73,7 +73,7 @@ data_path = "Data/chart_types_eu.csv"
 df = load_data(data_path=data_path)
 
 with st.sidebar:
-    filtered_df = dataframe_explorer(df)
+    filtered_df = st.dataframe(df)
 with st.expander("DataFrame ⤵️"):
     st.dataframe(filtered_df)
 _CHART = BubbleChart(filtered_df)
